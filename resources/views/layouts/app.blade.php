@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>@yield('title', 'DocOp Healthcare - Modern Hospital Management System')</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.png') }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
 
   <!-- Modern Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
   <!-- Modern UI Design System -->
-  <link rel="stylesheet" href="{{ asset('css/modern-ui.css?v=9') }}">
+  <link rel="stylesheet" href="/css/modern-ui.css?v=10">
 
   <script>
     (function() {
