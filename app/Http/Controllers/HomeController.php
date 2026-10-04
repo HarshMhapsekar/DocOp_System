@@ -8,8 +8,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $doctors = Doctor::all();
-        $specializations = Doctor::select('spec')->distinct()->pluck('spec');
+        try {
+            $doctors = Doctor::all();
+            $specializations = Doctor::select('spec')->distinct()->pluck('spec');
+        } catch (\Throwable $e) {
+            $doctors = collect();
+            $specializations = collect();
+        }
         return view('home', compact('doctors', 'specializations'));
     }
 
